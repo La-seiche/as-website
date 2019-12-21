@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Cabinet chiropratique - Anne-Sophie Thiebaut</title>
+  <link rel="stylesheet" href="<?= $wwwUrl ?>/css/normalize-3.0.3.min.css">
+  <link rel="stylesheet" href="<?= $wwwUrl ?>/css/all.min.css">
+  <link rel="stylesheet" href="<?= $wwwUrl ?>/css/font-awesome-4.3.0.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <!-- Feuilles de styles de l'application -->
+  <link rel="stylesheet" href="<?= $wwwUrl ?>/css/style.css">
+
+  <!-- Librairie jQuery -->
+  <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+
+  <!-- JavaScript de l'application -->
+  <script src="<?= $wwwUrl ?>/js/utilities.js"></script>
+</head>
+<body>
+
+  <!-- En-tête commune -->
+  <header class="header">
+    <div class="container menu">
+      <img src="<?= $wwwUrl ?>/images/logo/logo-cabinet.jpg" class="logo" alt="logo cabinet chiropratique">
+      <nav class="nav-bar">
+        <ul class="nav-list">
+          <li><a href="<?= $requestUrl ?>">Acceuil</a></li>
+          <li class="nav-item" data-name="chiropraxie">
+            <a href="<?= $requestUrl ?>/chiropraxie">Chiropraxie</a>
+            <div class="navButton">
+              <div class="sub-nav sub-nav-chiropraxie hide">
+                <ul class="sub-nav-list">
+                  <li class="sub-nav-item"><a href="<?= $requestUrl ?>/chiropraxie/menu1">Sous-menu 1</a></li>
+                  <li class="sub-nav-item"><a href="<?= $requestUrl ?>/chiropraxie/menu2">Sous-menu 2</a></li>
+                  <li class="sub-nav-item"><a href="<?= $requestUrl ?>/chiropraxie/menu3">Sous-menu 3</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item" data-name="patients">
+            <a href="<?= $requestUrl ?>/patients">Patients</a>
+            <div class="navButton">
+              <div class="sub-nav sub-nav-patients hide">
+                <ul class="sub-nav-list">
+                  <li class="sub-nav-item"><a href="<?= $requestUrl ?>/patients/menu1">Sous-menu 1</a></li>
+                  <li class="sub-nav-item"><a href="<?= $requestUrl ?>/patients/menu2">Sous-menu 2</a></li>
+                  <li class="sub-nav-item"><a href="<?= $requestUrl ?>/patients/menu3">Sous-menu 3</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item" data-name="consultation">
+            <a href="<?= $requestUrl ?>/consultation">Consultation</a>
+            <div class="navButton">
+              <div class="sub-nav sub-nav-consultation hide">
+                <ul class="sub-nav-list">
+                  <li class="sub-nav-item"><a href="<?= $requestUrl ?>/consultation/menu1">Sous-menu 1</a></li>
+                  <li class="sub-nav-item"><a href="<?= $requestUrl ?>/consultation/menu2">Sous-menu 2</a></li>
+                  <li class="sub-nav-item"><a href="<?= $requestUrl ?>/consultation/menu3">Sous-menu 3</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li><a href="<?= $requestUrl ?>blog">Blog</a></li>
+          <li><a href="<?= $requestUrl ?>cabinet">Cabinet</a></li>
+          <li><a href="https://www.doctolib.fr/chiropracteur/tassin-la-demi-lune/anne-sophie-thiebaut">Rdv en ligne</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <!-- Affichage du template lié à la vue -->
+    <?php include $this->viewData['template']; ?>
+  </main>
+  <!-- Pied de page commun -->
+  <footer class="footer">
+    <div class="container footer-informations">
+      <img src="<?= $wwwUrl ?>/images/logo/logo-cabinet.jpg" class="logo-footer" alt="logo cabinet chiropratique">
+      <div class="chiropractor-title">
+        <h3 class="title title-footer">Qui sommes-nous ?</h3>
+        <div class="chiropractor-name">
+          <p><strong>Anne-Sophie Thiebaut</strong><br>Chiropracteur</p>
+          <p>N°ADELI</p>
+        </div>
+        <div class="chiropractor-name">
+          <p><strong>Agathe Langue Novaro</strong><br>Chiropracteur</p>
+          <p>N°ADELI</p>
+        </div>
+      </div>
+      <div class="footer-contact">
+        <h3 class="title title-footer">Contact</h3>
+        <p>Pour prendre rendez-vous</p>
+        <p><i class="fas fa-phone-alt"></i> 04-78-47-80-27</p>
+        <p><i class="fas fa-map-marker-alt"></i>169, avenue Charles de Gaulle</p>
+        <p>69160 Tassin La Demi Lune</p>
+        <a class="cta-appointment" href="https://www.doctolib.fr/chiropracteur/tassin-la-demi-lune/anne-sophie-thiebaut"><i class="far fa-calendar-check"></i> Rdv en ligne</a>
+      </div>
+    </div>
+    <nav class="nav-footer">
+      <div class="container">
+        <ul class="nav-list-footer">
+          <li><a href="<?= $requestUrl ?>">Acceuil</a></li>
+          <li><a href="<?= $requestUrl ?>/chiropraxie">Chiropraxie</a></li>
+          <li><a href="<?= $requestUrl ?>patients">Patients</a></li>
+          <li><a href="<?= $requestUrl ?>consultation">Consultation</a></li>
+          <li><a href="<?= $requestUrl ?>blog">Blog</a></li>
+          <li><a href="<?= $requestUrl ?>cabinet">Cabinet</a></li>
+          <li><a href="https://www.doctolib.fr/chiropracteur/tassin-la-demi-lune/anne-sophie-thiebaut">Rdv en ligne</a></li>
+        </ul>
+      </div>
+  </footer>
+  </nav>
+
+  <!-- Code principal JavaScript de l'application -->
+  <script src="<?= $wwwUrl ?>/js/main.js"></script>
+
+</body>
+</html>

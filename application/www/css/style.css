@@ -1,0 +1,246 @@
+
+/* *****************************************
+************Eléments Généraux************
+***************************************** */
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --blue-color: #89cbed;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+.hide {
+  display: none;
+}
+
+/* *****************************************
+************HEADER************
+***************************************** */
+
+.header {
+  background-color: var(--blue-color);
+  position: sticky;
+  top: 0;
+  left: ;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+}
+
+.nav-bar {
+  width: 60%;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.nav-list li {
+  position: relative;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.sub-nav{
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 125px;
+  position: absolute;
+  top: 100%;
+  text-align: left;
+}
+
+.sub-nav-list {
+  padding: 0;
+  list-style: none;
+  font-size: 13px;
+}
+
+.sub-nav-item{
+  padding-left: 10px;
+  transition: all 300ms;
+}
+
+.sub-nav-item:hover,
+.sub-nav-item:hover a {
+  background-color: #C9EDFE;
+  color: #608FA5;
+}
+
+/* *****************************************
+************Homepage************
+***************************************** */
+
+.title-main {
+  text-align: center;
+  font-size: 50px;
+  color: var(--blue-color);
+}
+
+.presentation {
+  background-color: var(--blue-color);
+  padding: 10px 0 40px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.title-presentation {
+  color: #fff;
+  font-size: 30px;
+}
+
+.presentation>p {
+  margin-bottom: 30px;
+}
+
+.presentation-list {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.title-article {
+  color: var(--blue-color);
+}
+
+.why-presentation {
+  width: 23%;
+  padding: 20px 0;
+}
+
+.why-presentation:nth-of-type(4n+1) {
+  padding-left: 20px;
+  width: 24%;
+}
+
+.why-presentation:nth-of-type(4n+4) {
+  padding-right: 20px;
+  width: 24%;
+}
+
+.who-presentation {
+  width: 45%;
+  padding: 20px 10px
+}
+
+.who-presentation img {
+  width: 200px;
+  border-radius: 50%;
+  float: left;
+}
+
+.cta {
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #fff;
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(#fff, #fff) no-repeat;
+  background-size: 0 100%;
+  background-position: left center;
+}
+
+.cta:hover{
+  background-size: 100% 100%;
+  color: var(--blue-color);
+}
+
+/* *****************************************
+************FOOTER************
+***************************************** */
+
+.footer {
+  background-color: var(--blue-color);
+}
+
+.title-footer {
+  text-align: center;
+  color: #fff;
+}
+
+.footer-informations {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-footer {
+  width: 150px;
+}
+
+.chiropractor-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.title-footer {
+  width: 100%;
+}
+
+.cta-appointment {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 0;
+}
+
+.nav-list-footer {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+.nav-list-footer li+li {
+  margin-left: 10px;
+}
+
+.nav-list-footer a {
+  text-decoration: none;
+  color: #fff;
+}
